@@ -222,7 +222,7 @@ a.navbar-brand:hover img {
 }
 
 .projects {
-  background-image: url("../../assets/images/sobremi.png");
+  background-image: url("https://raw.githubusercontent.com/GenaroArce/PF-ArceGenaro/main/assets/images/sobremi.png");
   padding: 300px;
 }
 .projects span {
@@ -288,7 +288,7 @@ a.navbar-brand:hover img {
 }
 
 .container-memes {
-  background-image: url("../../assets/images/sobremi.png");
+  background-image: url("https://raw.githubusercontent.com/GenaroArce/PF-ArceGenaro/main/assets/images/sobremi.png");
   padding: 300px;
 }
 .container-memes .img-prin {
@@ -334,7 +334,7 @@ a.navbar-brand:hover img {
 }
 
 .container-contact {
-  background-image: url("../../assets/images/sobremi.png");
+  background-image: url("https://raw.githubusercontent.com/GenaroArce/PF-ArceGenaro/main/assets/images/sobremi.png");
   padding: 150px;
   display: flex;
   justify-content: space-between;
