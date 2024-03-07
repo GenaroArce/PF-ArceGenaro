@@ -1,0 +1,611 @@
+@import '../base/vars';
+@import '../base/utilities';
+
+.navbar-nav .nav-item .active {
+    border-radius: 6px;
+    background: linear-gradient($navbar-angulo, $navbar-gradient-1, $navbar-gradient-2);
+    box-shadow: 4px 4px 8px $navbar-gradient-3, -4px -4px 8px $navbar-gradient-4;
+}
+
+.navbar.fixed-top {
+    background-color: rgba(128, 123, 123, 0.9);
+    transition: background-color 0.3s ease; 
+}
+
+.navbar.fixed-top:hover {
+    background-color: rgb(19, 17, 17);
+}
+
+.dropdown-menu a:hover {
+    color: $navbar-dropdown-menu;
+}
+
+.nav-item {
+    margin: auto 4px;
+}
+
+a.navbar-brand {
+    color: $navbar-name;
+    img {
+        border-radius: 50%;
+        width: 60px;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+.navbar-toggler-icon {
+    background: linear-gradient($navbar-angulo, $navbar-gradient-1, $navbar-gradient-2);
+    box-shadow: 4px 4px 8px $navbar-gradient-3, -4px -4px 8px $navbar-gradient-4;
+}
+
+.navbar-nav .nav-link {
+    color: #454545;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #454545;
+}
+
+.container-text {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container-text2 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: inline-block; 
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    &:hover {
+        color: white;
+        background-color: #164484; 
+      }
+    
+      .gradient {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0.6em;
+        margin-top: -0.25em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+      }
+    
+      .label {
+        position: relative;
+        top: -1px;
+      }
+    
+      .transition {
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        transition-duration: 500ms;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 9999px;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+      &:hover .transition {
+        width: 14em;
+        height: 14em;
+      }
+    
+      &:active {
+        transform: scale(0.97);
+      }
+}
+
+.aboutme {
+    padding: 50px;
+    background-color: #191919;
+
+    #panel {
+        background-color: #1a1717;
+    }
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        margin-bottom: 6%;
+        color: rgb(255, 255, 255);
+    }
+
+    p {
+        margin-bottom: 5%;
+        color: rgb(255, 255, 255);
+    }
+
+    .image-container {
+        position: relative;
+        width: fit-content;
+    }
+    
+    .hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    .image-container:hover .hover-image {
+        opacity: 1;
+    }
+}
+
+.container-fot {
+    background-color: $footer-color;
+    padding: 20px;
+}
+
+.container-me {
+    padding: 40px 40px 60px 40px;
+    background-color: rgba(0, 0, 0, 0.885);
+
+    .columna {
+        padding: 20px;
+        border: 2px solid #0e0c0c4d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.2s ease-in;
+    
+        &:hover {
+            color: white;
+            background-color: #03030b;
+        }
+    }
+
+    i {
+        font-size: 2.5rem;
+        color: #ffffff;
+        background-color: #000000;
+        padding: 8px 19px;
+        border-radius: 50%;
+    }
+
+    .title-me {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .badges-container {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+
+        .badge {
+            margin: 5px;
+        }
+    }
+}
+
+.icons-red {
+    a {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: white;
+            border: 2px solid rgb(13, 110, 253);
+        }
+    }
+
+    i {
+        color: white;
+        font-size: 1.5rem;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.projects {
+    background-image: url('../../assets/images/sobremi.png');
+    padding: 300px;
+
+    span {
+        color: white;
+    }
+
+    .section-6 {
+        padding: 70px 0px 100px 0px;
+    }
+    
+    .section-6-inner {
+        width: 90%;
+        color: #000000;
+    }
+    
+    .section-6-heading {
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    
+    .section-6-para {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-top: 30px;
+    }
+    
+    .sec6-image {
+        border-radius: 5px;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    .section-6-button {
+        margin-top: 40px;
+    }
+    
+    .sec6-btn {
+        font-family: Roboto, sans-serif;
+        color: #000000;
+        letter-spacing: 2px;
+        cursor: pointer;
+
+        &:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+    
+    .sec6-btn-see-all {
+        font-family: Roboto, sans-serif;
+        color: #FFFFFF;
+        background-color: #ff0000;
+        letter-spacing: 2px;
+        padding: 10px 50px;
+        margin-top: 40px;
+        border: none;
+        box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: #000000;
+            background-color: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+        }
+
+        &:active {
+            transform: translateY(0px);
+        }
+    }
+}
+
+.container-memes {
+    background-image: url('../../assets/images/sobremi.png');
+    padding: 300px;
+
+    .img-prin {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    h1 {
+        color: white;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .card {
+        background-color: transparent;
+        box-shadow: 0 0 10px 3px rgb(13, 110, 253);
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 10px;
+
+        &:hover {
+            box-shadow: 0 0 15px 5px rgb(13, 110, 253);
+        }
+
+        &::before {
+            content: "";
+            width: 10%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            background-color: rgba(255,255,255,0);
+            transition: 0.5s;
+            border-radius: 10px;
+            filter: blur(5px);
+            transform: rotate(15deg);
+        }
+
+        &:hover::before{
+            left: 90%;
+            width: 0;
+            background-color: wheat;
+            opacity: 1;
+        }
+
+        p {
+            color: white;
+        }
+    }
+}
+
+.container-contact {
+    background-image: url('../../assets/images/sobremi.png');
+    padding: 150px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+    .form {
+        background-color: #15172b;
+        border-radius: 20px;
+        box-sizing: border-box;
+        height: 800px;
+        padding: 20px;
+        width: 320px;
+
+        .title {
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-top: 30px;
+    
+            img {
+                width: 100px;
+                border-radius: 10px;
+            }
+        }
+        .subtitle {
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .input-container {
+            height: 50px;
+            position: relative;
+            width: 100%;
+        }
+
+        .ic1 {
+            margin-top: 40px;
+        }
+          
+        .ic2 {
+            margin-top: 30px;
+        }
+          
+        .input {
+            background-color: #303245;
+            border-radius: 12px;
+            border: 0;
+            box-sizing: border-box;
+            color: #eee;
+            font-size: 18px;
+            height: 100%;
+            outline: 0;
+            padding: 4px 20px 0;
+            width: 100%;
+        }
+          
+        .cut {
+            background-color: #15172b;
+            border-radius: 10px;
+            height: 20px;
+            left: 20px;
+            position: absolute;
+            top: -20px;
+            transform: translateY(0);
+            transition: transform 200ms;
+            width: 76px;
+        }
+          
+        .cut-short {
+            width: 50px;
+        }
+          
+        .iLabel {
+            color: #65657b;
+            font-family: sans-serif;
+            left: 20px;
+            line-height: 14px;
+            pointer-events: none;
+            position: absolute;
+            transform-origin: 0 50%;
+            transition: transform 200ms, color 200ms;
+            top: 20px;
+        }
+
+        .input:focus ~ .cut {
+            transform: translateY(8px);
+        }
+          
+        .input:focus ~ .iLabel {
+            transform: translateY(-30px) translateX(10px) scale(0.75);
+        }
+          
+        .input:not(:focus) ~ .iLabel {
+            color: #808097;
+        }
+          
+        .input:focus ~ .iLabel {
+            color: #dc2f55;
+        }
+          
+        .submit {
+            background-color: #08d;
+            border-radius: 12px;
+            border: 0;
+            box-sizing: border-box;
+            color: #eee;
+            cursor: pointer;
+            font-size: 18px;
+            height: 50px;
+            margin-top: 40px;
+            text-align: center;
+            width: 100%;
+
+            &:active {
+                background-color: #06b;
+            }
+        }
+    }  
+}
+
+@media (max-width: $mobile-max-width) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .aboutme h2 {
+        font-size: 35px; 
+    }
+
+    #carouselCaptions img {
+        height: 150vw;
+    }
+
+    #carouselCaptions h5 {
+        font-size: 100px; 
+    }
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .section-6 {
+        padding: 10px 0px 40px 0px;
+    }
+
+    .section-6-heading {
+        font-size: 23px;
+    }
+
+    .section-6-para {
+        font-size: 12px;
+    }
+
+    .section-6-button {
+        margin-top: 20px;
+    }
+
+    .sec6-btn {
+        font-size: 10px;
+    }
+
+    .sec6-btn-see-all {
+        font-size: 10px;
+        margin-top: 0px;
+        padding: 5px 15px;
+    }
+
+    .container-memes {
+        padding: 20px;
+        .img-prin {
+            width: 100%;
+        }
+
+        .card {
+            width: 100%;
+            margin-bottom: 15px; 
+
+            img {
+                max-width: 100%; 
+            }
+        }
+    
+        .card-body {
+            padding: 10px; 
+
+            p {
+                font-size: 14px; 
+            }
+        }
+    }
+
+    .container-contact {
+        flex-direction: column;
+        padding: 50px 20px; 
+        align-items: center;
+        text-align: center; 
+
+        .form {
+            width: 100%; 
+            padding: 20px; 
+            height: auto; 
+
+            .title, .subtitle {
+                text-align: center;
+            }
+
+            .input-container {
+                margin-top: 20px;
+            }
+
+            .input {
+                font-size: 16px;
+            }
+
+            .submit {
+                margin-top: 30px;
+            }
+        }
+    }
+}
