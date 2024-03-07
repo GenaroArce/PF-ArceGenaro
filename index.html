@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genaro Arce - Portafolio</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <meta name="title" content="Home - Genaro Arce" />
+    <meta name="description" content="Inicio de la pagina web!" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Home - Genaro Arce" />
+    <meta property="og:description" content="Inicio de la pagina web!" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Home - Genaro Arce" />
+    <meta property="twitter:description" content="Inicio de la pagina web!" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="neubar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>Genaro Arce</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" aria-current="page" href="pages/aboutme.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="pages/projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="pages/memes.html">Memes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="pages/contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/images/prueba.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <div class="container-texts">
+                        <h5 class="container-text display-1">Genaro Arce</h5><br>
+                        <div class="btn-container-adopt text-center">
+                            <a href="pages/aboutme.html" class="custom-button">
+                                <span class="transition"></span>
+                                <span class="gradient"></span>
+                                <span class="label">Sobre Mi</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/prueba.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h5 class="container-text display-3">Ven a conocer mis proyectos!</h5><br>
+                    <div class="btn-container-adopt text-center">
+                        <a class="custom-button" href="pages/projects.html">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Proyectos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/prueba.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h5 class="container-text display-1">¿Quieres ver memes?</h5><br>
+                    <div class="btn-container-adopt text-center">
+                        <a class="custom-button" href="pages/memes.html">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Memes</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/prueba.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h5 class="container-text display-1">¿Necesitas ayuda?</h5><br>
+                    <div class="btn-container-adopt text-center">
+                        <a class="custom-button" href="pages/contact.html">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Contactame</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Atras</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </section>
+
+    <section class="aboutme">
+        <h2 class="display-4">Un poco sobre mi...</h2>
+        <div class="container bg-secondary">
+            <div class="row align-items-center" id="panel">
+                <div class="col-lg-5 order-lg-2">
+                    <div class="p-5">
+                        <div class="image-container">
+                            <img src="assets/images/yo2.png" class="base-image img-fluid rounded-circle" alt="self portrait">
+                            <img src="assets/images/yo.png" class="hover-image img-fluid rounded-circle" alt="self portrait zoomed">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-lg-1">
+                    <div class="p-5">
+                        <h3 class="name">Hola mi nombre es Genaro</h3>
+                        <p class="container-text2">Soy un apasionado del desarrollo web y la programación. Me encanta crear soluciones innovadoras y explorar nuevas tecnologías con entusiasmo.</p> 
+                        <a href="pages/aboutme.html"><button class="custom-button" style="padding: 10px;">Conocer mas...</button></a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="container-fot">
+        <footer class="text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Sigueme en</span>
+                <a href="https://github.com/GenaroArce/" type="button" class="btn btn-outline-light btn-rounded">GitHub</a>
+            </p>
+            </section>
+        </div>
+        
+        <div class="text-center p-3">
+            <p>&copy; 2024 Pagina Web de Genaro Arce - Desarrollo Web</p>
+        </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
